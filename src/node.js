@@ -23,6 +23,7 @@ PrettyJSON.view.Node = Backbone.View.extend({
     initialize:function(){
 
         this.data = this.options.data;
+        this.el = this.el || this.options.el;
         this.level = this.options.level || this.level;
         this.path = this.options.path;
         this.isLast = _.isUndefined(this.options.isLast) ?
